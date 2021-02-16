@@ -1,0 +1,15 @@
+{
+    "Lua.diagnostics.globals": [
+        "Bot",
+        "import",
+        "File",
+        "Http",
+        "Bots",
+        "Event",
+        "Quote",
+        "event"
+    ],
+    "Lua.diagnostics.disable": [
+        "lowercase-global"
+    ]
+}

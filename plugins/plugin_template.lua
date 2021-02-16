@@ -1,11 +1,14 @@
 return {
-    check = function(event) -- return true的话运行action
+    check = function(event)
+        --命令匹配，返回true运行action
         return false
     end,
     action = function(event)
-        return true -- return true的话停止匹配
+        --return true的话停止向下匹配
+        return true
     end,
     explain = function()
-        return -- 没有说明的话return nil
+        --功能解释，返回为字符串，若无需显示解释，返回nil即可
+        return
     end
 }

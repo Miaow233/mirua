@@ -3,7 +3,8 @@ return {
     plugins = { -- To enable a plugin, add its name to the list.
         "hitokoto",
         "shall",
-        "time"
+        "time",
+        "rainbow"
     },
-    debug = false, --[dev模式下忽略安全导入bot]
+    debug = true, --[dev模式下忽略安全导入bot]
 }

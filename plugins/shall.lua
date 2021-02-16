@@ -7,17 +7,17 @@ local function shall(command)
 end
 
 return {
-    check = function(event) -- return true的话运行action
+    check = function(event)
         return tostring(event.message):find("/shall ") and event.sender.id == 1293865264
     end,
     action = function(event)
         command = tostring(event.message):sub(8)
         print(command)
         local result = shall(command)
-        event.group:sendMessage(result:encode("GBK","UTF-8"))
-        return true -- return true的话停止匹配
+        sendMessage(result)
+        return true
     end,
     explain = function()
-        return -- 没有说明的话return nil
+        return "sh 命令执行"
     end
 }
